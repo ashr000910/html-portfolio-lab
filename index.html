@@ -33,14 +33,75 @@
                </section>
                <section>
                 Now, its time to hear my favorite song!
-                <audio controls autoplay>
-                    <source src="audio.html">
+                <audio controls autoplay muted loop>
+                    <source src="audio.mp3" type="audio/mpeg">
                 </audio>
                 <p>Now,its time for the music video!</p>
                 <video height="600px" width="500px" controls autoplay muted>
-                    <source src="video.html">
+                    <source src="video.mp4" type="video/mp4">
                 </video>
                </section>
+               <section>
+                <object data="aashruti.pdf" height="500px" width="600px">
+                </object>
+                <embed src="practicall.pdf" height="700px" width="800px">
+                    <iframe
+                    src="www.youtube.com/watch?v=DBQINq0SsAw"
+                    width="300px"
+                    height="200px">
+                </iframe>
+                <table tableborder="1" cellspacing="5">
+                    <tr>
+                        <th>SN</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Section</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Aashru</td>
+                        <td>11</td>
+                        <td>G</td>
+                    </tr>
+                </table>
+                <p style="background-colo:blueviolet"> Now lets fill a form!</p>
+                <form>
+                    <label> Name:</label>
+                    <input type="text" name="username">
+                    <label>Email:</label>
+                    <input type="email" name="email">
+                    <label> Password:</label>
+                    <input type="password" name="password">
+                    <p>Gender:</p>
+                    <input type="radio" name="gender" value="male">
+                    <label>Male</label> 
+                    <input type="radio" name="gender" value="female">
+                    <label>Female</label>
+                    <p>Hobbies:</p>
+                    <input type="checkbox" name="hobby" value="football">
+                    <label>Football</label>
+                    <input type="checkbox" name="hobby" value="music">
+<label>Music</label>
+
+<input type="checkbox" name="hobby" value="gaming">
+<label>Gaming</label>
+<label>Country:</label>
+<select name="country">
+    <option>Nepal</option>
+    <option>India</option>
+    <option>China</option>
+    <option>Japan</option>
+</select>
+<label>Message:</label>
+<textarea rows="5" cols="40">
+</textarea>
+<label>Age:</label>
+<input type="number">
+                </form>
+                <label>Date of Birth:</label>
+             <input type="date">
+<button type="submit">Submit</button> 
+             </section>
    </main> </body>
 </html>
 
