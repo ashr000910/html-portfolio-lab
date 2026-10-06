@@ -1,0 +1,13 @@
+body {
+    background-color: darkkhaki;
+}
+h1 {
+    font-size:19px;
+    color:purple;
+    text-align: center;
+    line-height: 1.5;
+}
+p {
+   color: crimson;
+   background-color: black;
+}
