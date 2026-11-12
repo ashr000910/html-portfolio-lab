@@ -3,14 +3,20 @@
 <html lang="en">
 
 <head>
-    
-    <title>AASHRUTI'S PORTFOLIO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aashruti's Portfolio</title>
+
+    <!-- Connecting CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
         <h1>Aashruti's Portfolio</h1>
+
         <p>
             Hey, I'm <em>Aashruti.</em>
             This is supposed to be a personal portfolio but
@@ -18,14 +24,12 @@
         </p>
     </header>
 
-    <br>
-
     <main>
 
         <section>
             <h2>ME</h2>
 
-            <p style="color:hotpink;">
+            <p class="about">
                 I'm 16 years old. I've always been intrigued
                 by being academically excellent and trying to
                 become the best version of myself.
@@ -37,7 +41,7 @@
         </section>
 
         <section>
-            <h3>A few interesting things about me!</h3>
+            <h2>A Few Interesting Things About Me!</h2>
 
             <p title="Also, shh and don't leak my info :P">
                 I like painting. Well, only <em>sometimes</em>
@@ -45,7 +49,7 @@
                 If I'm stressed, I approach watercolor and
                 paint brushes before any human being.
 
-                <br>
+                <br><br>
 
                 I like <mark>eating</mark> too, lol.
                 <small>Doomscrolling?</small> One of my
@@ -61,14 +65,14 @@
             </p>
 
             <blockquote>
-                If life gives you lemons, make lemonade.
+                "If life gives you lemons, make lemonade."
             </blockquote>
         </section>
 
         <section>
-            <h4>My education</h4>
+            <h2>My Education</h2>
 
-            <p style="color:blueviolet; background-color:bisque; font-size:16px;">
+            <p class="education">
                 For as long as I can remember, I've been a
                 <del>passionate student.</del>
                 From grade 2 to grade 10, I studied in KMC School.
@@ -77,6 +81,8 @@
                 Well, it does and I studied there.
                 Bad experience. 2/10.
 
+                <br><br>
+
                 And currently, I'm studying in St. Xavier's
                 College, Kathmandu. I love the environment and
                 the people in it. The teachers are fun too,
@@ -84,47 +90,64 @@
             </p>
         </section>
 
-        <br>
-
         <section>
-            Hi, let's view an image now, shall we?
+            <h2>Let's View an Image!</h2>
 
-            <a href="part2.html">Click here</a>
+            <a href="part2.html" class="link-button">
+                Click Here
+            </a>
         </section>
 
         <section>
-            <p>Now, it's time to hear my favorite song!</p>
+            <h2>My Favorite Song</h2>
 
-            <audio controls autoplay muted loop>
+            <audio controls loop>
                 <source src="audio.mp3" type="audio/mpeg">
                 Your browser does not support audio.
             </audio>
 
-            <p>Now, it's time for the music video!</p>
+            <h2>Music Video</h2>
 
-            <video height="600" width="500" controls muted>
+            <video controls width="500">
                 <source src="video.mp4" type="video/mp4">
                 Your browser does not support video.
             </video>
         </section>
 
         <section>
-            <object data="aashruti.pdf" height="500" width="600">
+            <h2>My Documents & Video</h2>
+
+            <h3>My PDF</h3>
+
+            <object
+                data="aashruti.pdf"
+                type="application/pdf"
+                width="100%"
+                height="500">
                 PDF cannot be displayed.
             </object>
 
-            <embed src="practicall.pdf" height="700" width="800">
+            <h3>Practical PDF</h3>
+
+            <embed
+                src="practicall.pdf"
+                type="application/pdf"
+                width="100%"
+                height="500">
+
+            <h3>YouTube Video</h3>
 
             <iframe
                 src="https://www.youtube.com/embed/DBQINq0SsAw"
-                width="300"
-                height="200"
-                title="YouTube video">
+                title="YouTube video"
+                allowfullscreen>
             </iframe>
         </section>
 
         <section>
-            <table border="1" cellspacing="5">
+            <h2>Student Information</h2>
+
+            <table>
                 <tr>
                     <th>SN</th>
                     <th>Name</th>
@@ -142,76 +165,67 @@
         </section>
 
         <section>
-            <p style="background-color:blueviolet;">
-                Now let's fill a form!
-            </p>
+            <h2>Let's Fill a Form!</h2>
 
             <form>
 
-                <label>Name:</label>
-                <input type="text" name="username">
+                <label for="username">Name:</label>
+                <input type="text" id="username"
+                    name="username" placeholder="Enter your name">
 
-                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                    name="email" placeholder="Enter your email">
 
-                <label>Email:</label>
-                <input type="email" name="email">
-
-                <br><br>
-
-                <label>Password:</label>
-                <input type="password" name="password">
-
-                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password"
+                    name="password" placeholder="Enter your password">
 
                 <p>Gender:</p>
 
-                <input type="radio" name="gender" value="male">
-                <label>Male</label>
+                <input type="radio" id="male"
+                    name="gender" value="male">
+                <label for="male">Male</label>
 
-                <input type="radio" name="gender" value="female">
-                <label>Female</label>
-
-                <br><br>
+                <input type="radio" id="female"
+                    name="gender" value="female">
+                <label for="female">Female</label>
 
                 <p>Hobbies:</p>
 
-                <input type="checkbox" name="hobby" value="football">
-                <label>Football</label>
+                <input type="checkbox" id="football"
+                    name="hobby" value="football">
+                <label for="football">Football</label>
 
-                <input type="checkbox" name="hobby" value="music">
-                <label>Music</label>
+                <input type="checkbox" id="music"
+                    name="hobby" value="music">
+                <label for="music">Music</label>
 
-                <input type="checkbox" name="hobby" value="gaming">
-                <label>Gaming</label>
+                <input type="checkbox" id="gaming"
+                    name="hobby" value="gaming">
+                <label for="gaming">Gaming</label>
 
                 <br><br>
 
-                <label>Country:</label>
+                <label for="country">Country:</label>
 
-                <select name="country">
-                    <option>Nepal</option>
-                    <option>India</option>
-                    <option>China</option>
-                    <option>Japan</option>
+                <select id="country" name="country">
+                    <option value="Nepal">Nepal</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
                 </select>
 
-                <br><br>
+                <label for="message">Message:</label>
 
-                <label>Message:</label>
+                <textarea id="message" name="message"
+                    rows="5" placeholder="Write something..."></textarea>
 
-                <textarea name="message" rows="5" cols="40"></textarea>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
 
-                <br><br>
-
-                <label>Age:</label>
-                <input type="number" name="age">
-
-                <br><br>
-
-                <label>Date of Birth:</label>
-                <input type="date" name="dob">
-
-                <br><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
 
                 <button type="submit">Submit</button>
 
@@ -221,7 +235,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Aashruti's Portfolio</p>
+        <p>© 2026 Aashruti's Portfolio | All Rights Reserved</p>
     </footer>
 
 </body>
